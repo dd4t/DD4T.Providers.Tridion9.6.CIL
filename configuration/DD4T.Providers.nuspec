@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:nuget="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>DD4T.Providers.Tridion9.6.CIL</id>
+    <version></version>
+    <authors>DD4T Community</authors>
+    <owners>DD4T Community</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Tridion 9.6 Providers for DD4T</description>
+    <releaseNotes>
+    </releaseNotes>
+    <tags>SDLTridion Tridion Tridion9 Tridion95 Tridion9.5 SDL SDLWeb SDLWeb9 Web DD4T</tags>
+    <dependencies>
+      <dependency id="DD4T.Core" version="2.5" />
+      <dependency id="Newtonsoft.Json" version="13.0.2" />
+      <dependency id="Sdl.Web.Delivery" version="11.6.1123" />
+    </dependencies>
+  </metadata>
+</package>
