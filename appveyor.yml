@@ -16,7 +16,7 @@ install:
 - choco install msbuild.communitytasks -y
 before_build:
 - ps: Get-ChildItem -Path "C:\Program Files (x86)\MSBuild" -Recurse
-- ps: ((Get-Content -path "D:\Code\DD4T\DD4T.Providers.Tridion9.6.CIL\DD4T Providers.Targets" -Raw) -replace '$(SolutionDir)packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets','C:\Program Files (x86)\MSBuild\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets') | Set-Content -Path "D:\Code\DD4T\DD4T.Providers.Tridion9.6.CIL\DD4T Providers.Targets"
+- ps: ((Get-Content -path "D:\Code\DD4T\DD4T.Providers.Tridion9.6.CIL\DD4T Providers.Targets" | Out-String) -replace [Regex]::Escape('$(SolutionDir)packages\MSBuildTasks.1.5.0.235\build\MSBuildTasks.targets'),'C:\Program Files (x86)\MSBuild\MSBuildCommunityTasks\MSBuild.Community.Tasks.Targets') | Set-Content -Path "D:\Code\DD4T\DD4T.Providers.Tridion9.6.CIL\DD4T Providers.Targets"
 build:
   project: build.msbuild
   verbosity: normal
