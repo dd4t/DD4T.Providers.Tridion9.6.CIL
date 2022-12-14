@@ -16,6 +16,7 @@ install:
 - choco install msbuild.communitytasks -y
 before_build:
 - ps: Get-ChildItem -Path "C:\projects\dd4t-providers-tridion9-6-cil" -Recurse
+- ps: Get-ChildItem -Path "C:\Program Files (x86)\MSBuild" -Recurse
 build:
   project: build.msbuild
   verbosity: normal
