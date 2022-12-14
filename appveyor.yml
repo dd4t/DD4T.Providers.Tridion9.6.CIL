@@ -22,6 +22,8 @@ artifacts:
   name: NuGet Package
 - path: build/package/**/*.zip
   name: Zip Archive
+- path: /C/ProgramData/chocolatey/logs/chocolatey.log
+  name: Chocolatey log
 notifications:
   - provider: Slack
     auth_token:
