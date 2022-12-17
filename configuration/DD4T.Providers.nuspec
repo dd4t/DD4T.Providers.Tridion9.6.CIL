@@ -11,7 +11,7 @@
     </releaseNotes>
     <tags>RWS Tridion Sites Tridion96 Tridion9.6 RWS SDL DD4T</tags>
     <dependencies>
-      <dependency id="DD4T.Core" version="2.5" />
+      <dependency id="DD4T.Core" version="2.6" />
       <dependency id="Newtonsoft.Json" version="13.0.2" />
       <dependency id="Sdl.Web.Delivery" version="11.6.1123" />
     </dependencies>
