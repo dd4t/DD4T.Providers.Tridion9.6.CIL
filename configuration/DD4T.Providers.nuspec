@@ -9,7 +9,7 @@
     <description>Tridion 9.6 Providers for DD4T</description>
     <releaseNotes>
     </releaseNotes>
-    <tags>SDLTridion Tridion Tridion9 Tridion95 Tridion9.5 SDL SDLWeb SDLWeb9 Web DD4T</tags>
+    <tags>RWS Tridion Sites Tridion96 Tridion9.6 RWS SDL DD4T</tags>
     <dependencies>
       <dependency id="DD4T.Core" version="2.5" />
       <dependency id="Newtonsoft.Json" version="13.0.2" />
